@@ -1,0 +1,70 @@
+body {
+	margin: 0;
+	background-color: #EDEEEF;
+}
+header {
+	height: 4em;
+	background-color: #476C99;
+}
+#startButton {
+	height:3em;
+	width: 3em;
+	border-radius: 50%;
+	border: none;
+	background-color: #082238;
+	margin: 1.25em 8em;
+}
+#inputForm {
+	display: none;
+	background-color: #fff;
+	padding: 3.5em 0;
+}
+#imageInput, #imageCaption {
+	display: block;
+	width: 70%;
+	padding: 1em;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	font-size: 1em;
+}
+
+#buttonContainer {
+	width: 70%;
+	margin: 0 auto;
+	text-align: right;
+}
+#cancelButton, #addImageButton {
+	border: none;
+	color: white;
+	height: 4em;
+	border-radius: 5%;
+}
+#cancelButton {
+	background-color: #B6B6B6;
+	width: 20%;	
+}
+#addImageButton {
+	background-color: #17AA56;
+	width: 30%;
+}
+#imageSection {
+	width: 100%;
+	max-width: 54em;
+	margin: 0 auto;
+	background-color: #E0E1E2;
+}
+.image, .imageCaption {
+	width: 85%;
+	margin: 0 auto;
+}
+.imageCaption {
+	color: #64757B;
+	background-color: #fff;
+	padding: 1.5em;
+}
+
+
+
+
+
+
