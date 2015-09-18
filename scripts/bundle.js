@@ -16,6 +16,7 @@ $(document).ready(function () {
     function clearFields() {
         $imageInput = $imageInput.val('');
         $imageCaption = $imageCaption.val('');
+        $error = $error.html('');
     }
 
     $('#cancelButton').click(function (e) {
@@ -34,6 +35,7 @@ $(document).ready(function () {
         if (image.substr(0, 4) !== 'http') {
             return $error.html('Your image URL must begin with "http://" or "https://"!');
         }
+        $error.html('');
         $inputForm.hide('slow');
         $.post(url, {
             image: image,

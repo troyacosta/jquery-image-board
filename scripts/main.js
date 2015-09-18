@@ -15,6 +15,7 @@ $(document).ready(function() {
     function clearFields() {
         $imageInput = $imageInput.val('');
         $imageCaption = $imageCaption.val('');
+        $error = $error.html('');
     }
 
     $('#cancelButton').click(function(e) {
@@ -27,12 +28,13 @@ $(document).ready(function() {
         e.preventDefault();
         var image = $imageInput.val();
         var caption = $imageCaption.val();
-        if(image === '' || caption === '') {
-           return $error.html('You must enter a valid image link and leave a comment!');
+        if (image === '' || caption === '') {
+            return $error.html('You must enter a valid image link and leave a comment!');
         }
-        if(image.substr(0, 4) !== 'http') {
+        if (image.substr(0, 4) !== 'http') {
             return $error.html('Your image URL must begin with "http://" or "https://"!');
         }
+        $error.html('');
         $inputForm.hide('slow');
         $.post(
             url, {
