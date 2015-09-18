@@ -15,10 +15,6 @@ $(document).ready(function() {
         $imageInput = $imageInput.val('');
         $imageCaption = $imageCaption.val('');
     }
-    function updateImages() {
-        $imageUpdate = $imageUpdate.val('');
-        $captionUpdate = $captionUpdate.val('');
-    }
 
     $('#cancelButton').click(function(e) {
         e.preventDefault();
@@ -28,7 +24,6 @@ $(document).ready(function() {
 
     $('#addImageButton').click(function(e) {
         e.preventDefault();
-        // clearFields();
         $inputForm.hide('slow');
         var image = $imageInput.val();
         var caption = $imageCaption.val();
@@ -54,9 +49,6 @@ $(document).ready(function() {
                 $imageSection.append('<div class="imageUpdate"><img src="'+data.image+
                     '"></div><div class="captionUpdate">'+data.caption+'</div>')
             })
-        },
-        function(data){
-            console.log(data);
         },
         'json'
         );

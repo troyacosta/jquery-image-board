@@ -10,6 +10,10 @@ header {
 	margin-left: 7%;
 	font-size: 2.5em;
 }
+#startButton:hover {
+	cursor: pointer;
+}
+
 #inputForm {
 	display: none;
 	background-color: #fff;
@@ -22,6 +26,7 @@ header {
 	margin: 0 auto;
 	margin-bottom: 1em;
 	font-size: 1em;
+	border: 1px solid #B6B6B6;
 }
 
 #buttonContainer {
