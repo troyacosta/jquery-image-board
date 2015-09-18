@@ -3,16 +3,12 @@ body {
   background-color: #EDEEEF; }
 
 header {
-  height: 4em;
-  background-color: #476C99; }
+  background-color: #476C99;
+  padding: .5em 0; }
 
 #startButton {
-  height: 3em;
-  width: 3em;
-  border-radius: 50%;
-  border: none;
-  background-color: #082238;
-  margin: 1.25em 8em; }
+  margin-left: 7%;
+  font-size: 2.5em; }
 
 #inputForm {
   display: none;
@@ -53,10 +49,19 @@ header {
   background-color: #E0E1E2; }
 
 .imageUpdate, .captionUpdate {
-  width: 85%;
-  margin: 0 auto; }
+  width: 80%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: -.25em; }
 
 .captionUpdate {
   color: #64757B;
   background-color: #fff;
-  padding: 1.5em; }
+  font-size: 1.5em;
+  padding: 2em;
+  margin-bottom: 4em; }
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 0; }

@@ -5,8 +5,6 @@ $(document).ready(function () {
     var $imageInput = $('#imageInput');
     var $imageCaption = $('#imageCaption');
     var $inputForm = $('#inputForm');
-    var $imageUpdate = $('.image');
-    var $captionUpdate = $('.caption');
     var $imageSection = $('#imageSection');
     var url = 'http://tiyfe.herokuapp.com/collections/troy-pic-site';
 
@@ -41,14 +39,13 @@ $(document).ready(function () {
             image: image,
             caption: caption
         }, function (data) {
-            $imageSection.append('<div class="$imageUpdate"><img src="' + data.image + '"></div><div class="$captionUpdate">' + data.caption + '</div>');
+            $imageSection.append('<div class="imageUpdate"><img src="' + data.image + '"></div><div class="captionUpdate">' + data.caption + '</div>');
         }, 'json');
-        updateImages();
     });
 
     $.get(url, function (data) {
         data.forEach(function (data) {
-            $imageSection.append('<div class="$imageUpdate"><img src="' + data.image + '"></div><div class="$captionUpdate">' + data.caption + '</div>');
+            $imageSection.append('<div class="imageUpdate"><img src="' + data.image + '"></div><div class="captionUpdate">' + data.caption + '</div>');
         });
     }, function (data) {
         console.log(data);

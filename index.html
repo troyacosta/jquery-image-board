@@ -3,12 +3,13 @@
 
 <head>
     <title>jquery image board</title>
+      <link rel="stylesheet" type="text/css" media="screen" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" />
     <link rel="stylesheet" type="text/css" href="styles/main.sass.css">
 </head>
 
 <body>
     <header>
-        <button id="startButton"></button>
+        <i id="startButton" class="icon ion-plus-circled"></i>
     </header>
     <form id="inputForm">
         <input id="imageInput" type="url" placeholder="Image URL">
@@ -19,8 +20,6 @@
         </div>
     </form>
     <section id="imageSection">
-        <div class="image"></div>
-        <div class="imageCaption"></div>
     </section>
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
