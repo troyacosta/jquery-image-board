@@ -1,81 +1,94 @@
 body {
-	margin: 0;
-	background-color: #EDEEEF;
+    margin: 0;
+    background-color: #EDEEEF;
 }
+
 header {
-	background-color: #476C99;
-	padding: .5em 0;
+    background-color: #476C99;
+    padding: .5em 0;
 }
+
 #startButton {
-	margin-left: 7%;
-	font-size: 2.5em;
+    margin-left: 7%;
+    font-size: 2.5em;
 }
+
 #startButton:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 #inputForm {
-	display: none;
-	background-color: #fff;
-	padding: 3.5em 0;
+    display: none;
+    background-color: #fff;
+    padding-top: 3.5em;
 }
-#imageInput, #imageCaption {
-	display: block;
-	width: 70%;
-	padding: 1em;
-	margin: 0 auto;
-	margin-bottom: 1em;
-	font-size: 1em;
-	border: 1px solid #B6B6B6;
+
+#imageInput,
+#imageCaption {
+    display: block;
+    width: 70%;
+    padding: 1em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    font-size: 1em;
+    border: 1px solid #B6B6B6;
 }
 
 #buttonContainer {
-	width: 70%;
-	margin: 0 auto;
-	text-align: right;
+    width: 75%;
+    margin: 0 auto;
+    text-align: right;
 }
-#cancelButton, #addImageButton {
-	border: none;
-	color: white;
-	height: 4em;
-	border-radius: 5%;
+
+#errorMessages {
+    text-align: left;
+    height: 3.5em;
+    color: red;
 }
-#cancelButton {
-	background-color: #B6B6B6;
-	width: 20%;	
-}
+
+#cancelButton,
 #addImageButton {
-	background-color: #17AA56;
-	width: 30%;
+    border: none;
+    color: white;
+    height: 4em;
+    border-radius: 5%;
 }
+
+#cancelButton {
+    background-color: #B6B6B6;
+    width: 20%;
+}
+
+#addImageButton {
+    background-color: #17AA56;
+    width: 30%;
+}
+
 #imageSection {
-	width: 100%;
-	max-width: 54em;
-	margin: 0 auto;
-	background-color: #E0E1E2;
+    width: 100%;
+    max-width: 54em;
+    margin: 0 auto;
+    background-color: #E0E1E2;
 }
-.imageUpdate, .captionUpdate {
-	width: 80%;
-	box-sizing: border-box;
-	margin: 0 auto;
-	margin-bottom: -.25em;
-}
+
+.imageUpdate,
 .captionUpdate {
-	color: #64757B;
-	background-color: #fff;
-	font-size: 1.5em;
-	padding: 2em;
-	margin-bottom: 4em;
-	
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: -.25em;
 }
+
+.captionUpdate {
+    color: #64757B;
+    background-color: #fff;
+    font-size: 1.5em;
+    padding: 2em;
+    margin-bottom: 4em;
+}
+
 img {
-	width: 100%;
-	height: auto;
-	margin: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
 }
-
-
-
-
-
-
