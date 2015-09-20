@@ -59,14 +59,4 @@ $(document).ready(function() {
         },
         'json'
     );
-
-
-
-
-
-
-
-
-
-
 });
