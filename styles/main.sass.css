@@ -29,7 +29,7 @@ header {
   border: 1px solid #B6B6B6; }
 
 #buttonContainer {
-  width: 75%;
+  width: 73%;
   margin: 0 auto;
   text-align: right; }
 
@@ -43,7 +43,8 @@ header {
   border: none;
   color: white;
   height: 4em;
-  border-radius: 5%; }
+  border-radius: 5%;
+  box-sizing: border-box; }
 
 #cancelButton {
   background-color: #B6B6B6;
